@@ -1,0 +1,189 @@
+/*font-family: 'Sacramento', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-spread {
+  justify-content: space-between;
+}
+
+.content-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  margin: 0 auto;
+}
+/*BANNER SECTION*/
+
+#cycler {
+  position: relative;
+  background: green;
+  height: 707px;
+  width: 100%;
+  display: block;
+}
+
+#cycler #top-layer {
+  font-family: 'Sacramento', cursive;
+  color: white;
+  /*height: 100%;*/
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+}
+
+#cycler #primary-title {
+  font-size: 11vw;
+  width: 500px;
+  position: absolute;
+  top: 330px;
+  left: 70px;
+}
+
+#cycler #secondary-title {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+}
+
+#secondary-title h2 {
+  font-size: 4vw;
+  text-align: right;
+  line-height: 5vw;
+}
+
+#cycler img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#cycler img.active {
+  z-index: 3
+}
+
+span.tiny {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+/*COUNTDOWN*/
+
+#cycler .countdown {
+  font-family: 'Century Gothic';
+  border-radius: 10px;
+  color: white;
+  width: 300px;
+  float: right;
+}
+
+.countdown .digits {
+  font-size: 2vw;
+  line-height: 3vw;
+}
+
+/*SECTION FORMAT*/
+
+.section-container {
+  margin: 5vw auto;
+  width: 80%;
+}
+
+section h3 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3vw;
+  margin-bottom: 3vw;
+  text-align: center;
+}
+
+section h4 {
+  font-family: 'Century Gothic';
+  font-size: 1.7vw;
+}
+
+section p {
+  font-family: 'Century Gothic';
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+.bottom-border {
+  border-bottom: 1px #cccccc solid;
+}
+
+/*STORY SECTION*/
+
+#story p {
+  width: 90%;
+  text-align: center;
+}
+
+/*COLLAGE*/
+
+section.collage {
+  width: 100%;
+}
+
+.collage.flex-row img {
+  flex: 1;
+  width: 33.3%;
+  height: 33.3%;
+}
+
+/*HOTEL INFORMATION*/
+#hotel-info .hotel-section {
+  width: 350px;
+  /*background: yellow;*/
+}
+
+#hotel-info h4 {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.hotel-section ul li {
+  /*background: green;*/
+  margin-bottom: 1.5vw;
+  position: relative;
+}
+
+.hotel-name {
+  color: #333333;
+  font-size: 1.1vw;
+  font-weight: bold;
+  line-height: 1.3vw;
+  margin-bottom: 1vw;
+}
+
+p.hotel-info {
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+}
+
+a.hotel-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*color: #ff9966;*/
+  color: #ff9999;
+}
