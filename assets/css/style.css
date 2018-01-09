@@ -36,11 +36,23 @@ html, body {
 
 #cycler {
   position: relative;
-  background: green;
   height: 707px;
   width: 100%;
+  display: inline-block;
+}
+
+#cycler img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
   display: block;
 }
+
+#cycler img.active {
+  z-index: 3
+}
+
+/*LAYER*/
 
 #cycler #top-layer {
   font-family: 'Sacramento', cursive;
@@ -69,16 +81,6 @@ html, body {
   font-size: 4vw;
   text-align: right;
   line-height: 5vw;
-}
-
-#cycler img {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-}
-
-#cycler img.active {
-  z-index: 3
 }
 
 span.tiny {
@@ -162,7 +164,6 @@ section.collage {
 }
 
 .hotel-section ul li {
-  /*background: green;*/
   margin-bottom: 1.5vw;
   position: relative;
 }
@@ -184,6 +185,37 @@ a.hotel-link {
   position: absolute;
   top: 0;
   right: 0;
-  /*color: #ff9966;*/
   color: #ff9999;
+}
+
+/*EVENTS*/
+
+#events ul {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#events ul li {
+  margin-bottom: 3vw;
+}
+
+#events ul li .time {
+  color: #b3b3b3;
+  font-family: 'Century Gothic';
+  font-size: 1.2vw;
+  text-align: right;
+  flex: 1;
+  margin: 0.5vw 5vw 0 0;
+}
+
+#events ul li .event {
+  flex: 2;
+}
+
+#events ul li .event .name {
+  padding: 0;
+}
+
+#events ul li .event .details {
+  font-size: 1vw;
 }
