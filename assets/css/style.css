@@ -1,5 +1,10 @@
 /*font-family: 'Sacramento', cursive;
-font-family: 'Alegreya Sans SC', sans-serif;*/
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Rasa', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Kurale', serif;
+font-family: 'Gabriela', serif;*/
+
 
 html, body {
   height: 100%;
@@ -36,9 +41,10 @@ html, body {
 
 #cycler {
   position: relative;
-  height: 707px;
+  height: 90%;
   width: 100%;
   display: inline-block;
+  /*background: green;*/
 }
 
 #cycler img {
@@ -55,43 +61,45 @@ html, body {
 /*LAYER*/
 
 #cycler #top-layer {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   color: white;
-  /*height: 100%;*/
   width: 100%;
   position: absolute;
   z-index: 4;
 }
 
 #cycler #primary-title {
-  font-size: 11vw;
+  font-size: 7vw;
   width: 500px;
   position: absolute;
-  top: 330px;
-  left: 70px;
+  line-height: 8vw;
+  top: 370px;
+  left: 80px;
 }
 
 #cycler #secondary-title {
   position: absolute;
-  top: 50px;
-  right: 70px;
+  font-weight: bold;
+  top: 420px;
+  right: 80px;
 }
 
 #secondary-title h2 {
-  font-size: 4vw;
+  font-size: 2.5vw;
+  line-height: 4vw;
   text-align: right;
-  line-height: 5vw;
 }
 
 span.tiny {
   font-size: 5vw;
-  font-weight: bold;
 }
 
 /*COUNTDOWN*/
 
 #cycler .countdown {
-  font-family: 'Century Gothic';
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1vw;
+  font-weight: normal;
   border-radius: 10px;
   color: white;
   width: 300px;
@@ -111,19 +119,19 @@ span.tiny {
 }
 
 section h3 {
-  font-family: 'Sacramento', cursive;
-  font-size: 3vw;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.3vw;
   margin-bottom: 3vw;
   text-align: center;
 }
 
 section h4 {
-  font-family: 'Century Gothic';
+  font-family: 'Kurale', serif;
   font-size: 1.7vw;
 }
 
 section p {
-  font-family: 'Century Gothic';
+  font-family: 'Kurale', serif;
   font-size: 1.5vw;
   line-height: 2vw;
 }
@@ -153,8 +161,7 @@ section.collage {
 
 /*HOTEL INFORMATION*/
 #hotel-info .hotel-section {
-  width: 350px;
-  /*background: yellow;*/
+  width: 330px;
 }
 
 #hotel-info h4 {
@@ -183,7 +190,7 @@ p.hotel-info {
 
 a.hotel-link {
   position: absolute;
-  top: 0;
+  top: 3px;
   right: 0;
   color: #ff9999;
 }
@@ -201,7 +208,7 @@ a.hotel-link {
 
 #events ul li .time {
   color: #b3b3b3;
-  font-family: 'Century Gothic';
+  font-family: 'Kurale', serif;
   font-size: 1.2vw;
   text-align: right;
   flex: 1;
@@ -218,4 +225,5 @@ a.hotel-link {
 
 #events ul li .event .details {
   font-size: 1vw;
+  line-height: 1.3vw;
 }
