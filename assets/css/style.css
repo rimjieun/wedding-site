@@ -37,6 +37,28 @@ html, body {
 .center {
   margin: 0 auto;
 }
+
+/*NAVBAR*/
+#navbar {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6vw;
+  align-items: center;
+  height: 70px;
+  padding: 0 300px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: rgba(142,121,102,0.9);
+  display: none;
+}
+
+#navbar a {
+  color: #dfd9d3;
+  font-weight: bold;
+  text-decoration: none;
+  flex: 1;
+}
+
 /*BANNER SECTION*/
 
 #cycler {
