@@ -15,12 +15,49 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
       $('#navbar')
-          .fadeIn(500)
-          .css("display", "flex");
+        .fadeIn(500)
+        .css("display", "flex");
     } else {
       $('#navbar').fadeOut(500);
     }
   });
+
+  // $("#intro-btn, .side-nav#intro-btn").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".section2").offset().top
+  //     },
+  //     'slow');
+  // });
+
+  // $("#skills-btn, .side-nav#intro-btn").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".section3").offset().top
+  //     },
+  //     'slow');
+  // });
+
+  // $("#portfolio-btn").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".section4").offset().top
+  //     },
+  //     'slow');
+  // });
+
+  // $("#contact-btn").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".section5").offset().top
+  //     },
+  //     'slow');
+  // });
+
+  $('a[href^="#"]').on('click', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 });
 
 // Set the date we're counting down to
