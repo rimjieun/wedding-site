@@ -63,10 +63,10 @@ html, body {
 
 #cycler {
   position: relative;
-  height: 90%;
+  height: 90vh;
   width: 100%;
   display: inline-block;
-  /*background: green;*/
+  background: green;
 }
 
 #cycler img {
@@ -257,4 +257,10 @@ a.hotel-link {
 #events ul li .event .details {
   font-size: 1vw;
   line-height: 1.3vw;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: orange;
+  }
 }
