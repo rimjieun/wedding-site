@@ -12,16 +12,6 @@ $(document).ready(function() {
   // run every 7s
   setInterval('cycleImages()', 7000);
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
-      $('#navbar')
-        .fadeIn(500)
-        .css("display", "flex");
-    } else {
-      $('#navbar').fadeOut(500);
-    }
-  });
-
   $('a[href^="#"]').on('click', function (event) {
     event.preventDefault();
 

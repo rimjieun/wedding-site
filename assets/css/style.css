@@ -15,6 +15,11 @@ html, body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -38,96 +43,79 @@ html, body {
   margin: 0 auto;
 }
 
-/*NAVBAR*/
-#navbar {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.6vw;
-  align-items: center;
-  height: 70px;
-  padding: 0 300px;
+/*HEADER*/
+header {
   position: fixed;
   width: 100%;
   z-index: 5;
-  background: rgba(142,121,102,0.9);
-  display: none;
 }
 
-#navbar a {
-  color: #dfd9d3;
-  font-weight: bold;
-  text-decoration: none;
-  flex: 1;
-}
-
-/*BANNER SECTION*/
-
-#cycler {
-  position: relative;
-  height: 90vh;
-  width: 100%;
-  display: inline-block;
-  background: green;
-}
-
-#cycler img {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  display: block;
-}
-
-#cycler img.active {
-  z-index: 3
-}
-
-/*LAYER*/
-
-#cycler #top-layer {
+header .top-header {
   font-family: 'Julius Sans One', sans-serif;
+  background: rgb(5, 30, 68);
+  padding: 0 70px;
+  height: 70px;
+}
+
+header h1 {
+  height: 70px;
+  display: table;
+}
+
+#logo, #navbar a {
   color: white;
-  width: 100%;
-  position: absolute;
-  z-index: 4;
 }
 
-#cycler #primary-title {
-  font-size: 5vw;
-  padding: 0 20px 0 70px;
-  position: absolute;
-  line-height: 8vw;
-  top: 480px;
-  left: 0;
-  background: rgba(13, 13, 13, 0.7);
-}
-
-#cycler #secondary-title {
-  font-weight: bold;
-  padding: 10px 20px 20px 20px;
-  position: absolute;
-  top: 430px;
-  right: 0;
-  background: rgba(13, 13, 13, 0.5);
-}
-
-#secondary-title h2 {
-  font-size: 2.5vw;
-  line-height: 4vw;
-  text-align: center;
-}
-
-span.tiny {
-  font-size: 3vw;
+#logo {
+  font-size: 3.5vw;
+  display: table-cell;
   vertical-align: middle;
 }
 
-/*COUNTDOWN*/
+span.tiny {
+  font-size: 2vw;
+  vertical-align: middle;
+}
 
-#cycler .countdown {
+#navbar {
+  display: table;
+  font-size: 1.5vw;
+  width: 650px;
+  height: 70px;
+}
+
+#navbar a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 70px;
+}
+
+#navbar a:hover {
+  background: green;
+}
+
+header .bottom-header {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5vw;
+  background: rgba(13, 13, 13, 0.8);
+  color: white;
+  height: 40px;
+  text-align: right;
+  padding-right: 98px;
+  line-height: 40px
+}
+
+span.separator {
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+/*COUNTDOWN*/
+.countdown {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1vw;
   font-weight: normal;
   border-radius: 10px;
-  color: white;
   width: 300px;
   margin: 0 auto;
 }
@@ -135,6 +123,44 @@ span.tiny {
 .countdown .digits {
   font-size: 2vw;
   line-height: 3vw;
+}
+
+/*BANNER SECTION*/
+
+div#cycler {
+  position: relative;
+  padding-top: 30px;
+  height: 90vh;
+  width: 100%;
+
+}
+
+#cycler img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#cycler img.active {
+  z-index: 3;
+}
+
+#cycler .arrow {
+  z-index: 4;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+}
+
+i.fa.fa-angle-down {
+  font-size: 4vw;
+  color: rgb(196,194,194);
+  margin: 0 auto;
+}
+
+i.fa.fa-angle-down:hover {
+  color: white;
 }
 
 /*SECTION FORMAT*/
@@ -229,7 +255,7 @@ a.hotel-link {
 /*EVENTS*/
 
 #events ul {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -243,7 +269,7 @@ a.hotel-link {
   font-size: 1.2vw;
   text-align: right;
   flex: 1;
-  margin: 0.5vw 5vw 0 0;
+  margin: 0.5vw 5vw 0 0;  
 }
 
 #events ul li .event {
