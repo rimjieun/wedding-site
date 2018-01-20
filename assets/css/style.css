@@ -4,7 +4,7 @@ font-family: 'Rasa', serif;
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Gabriela', serif;*/
-
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 html, body {
   height: 100%;
@@ -52,7 +52,7 @@ header {
 
 header .top-header {
   font-family: 'Julius Sans One', sans-serif;
-  background: rgb(5, 30, 68);
+  background: rgb(0, 26, 51);
   padding: 0 70px;
   height: 70px;
 }
@@ -153,14 +153,25 @@ div#cycler {
   text-align: center;
 }
 
-i.fa.fa-angle-down {
+i.fa.fa-chevron-circle-down {
   font-size: 4vw;
   color: rgb(196,194,194);
   margin: 0 auto;
 }
 
-i.fa.fa-angle-down:hover {
+i.fa.fa-chevron-circle-down:hover {
   color: white;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: white;
+  font-size: 4vw;
+}
+
+.arrow a:hover {
+  color: green;
 }
 
 /*SECTION FORMAT*/
@@ -170,8 +181,8 @@ section {
 }
 
 .section-container {
-  padding: 9vw 0 4vw;
-  margin: -4vw auto 0;
+  padding: 11vw 0 4vw;
+  margin: -4.5vw auto 0;
   width: 80%;
 }
 
