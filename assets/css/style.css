@@ -114,15 +114,25 @@ span.separator {
 .countdown {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1vw;
-  font-weight: normal;
-  border-radius: 10px;
-  width: 300px;
-  margin: 0 auto;
+  /*font-weight: bold;*/
+  width: 40%;
+  margin: 0 auto 70px;
+  align-items: center;
+  color: #999999;
+}
+
+.countdown .flex-col {
+  width: 50px;
 }
 
 .countdown .digits {
   font-size: 2vw;
   line-height: 3vw;
+}
+
+span.decoration {
+  font-size: 2vw;
+
 }
 
 /*BANNER SECTION*/
@@ -266,7 +276,7 @@ a.hotel-link {
 /*EVENTS*/
 
 #events ul {
-  max-width: 600px;
+  max-width: 60%;
   margin: 0 auto;
 }
 
