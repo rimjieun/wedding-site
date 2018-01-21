@@ -1,0 +1,12 @@
+@media screen and (max-width: 400px) {
+  body {
+    background: orange;
+  }
+  header {
+    height: 80px;
+  }
+  div#cycler {
+    height: 23vh;
+  }
+
+}

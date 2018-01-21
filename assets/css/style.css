@@ -114,7 +114,6 @@ span.separator {
 .countdown {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1vw;
-  /*font-weight: bold;*/
   width: 40%;
   margin: 0 auto 70px;
   align-items: center;
@@ -142,6 +141,7 @@ div#cycler {
   padding-top: 30px;
   height: 90vh;
   width: 100%;
+  background: green;
 
 }
 
@@ -305,10 +305,4 @@ a.hotel-link {
 #events ul li .event .details {
   font-size: 1vw;
   line-height: 1.3vw;
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    background: orange;
-  }
 }
