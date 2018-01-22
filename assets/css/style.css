@@ -94,6 +94,12 @@ span.tiny {
   background: rgb(0, 40, 77);
 }
 
+i.fa.fa-bars {
+  color: white;
+  font-size: 2.5vw;
+  display: none;
+}
+
 header .bottom-header {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5vw;
