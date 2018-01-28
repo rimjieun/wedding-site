@@ -4,9 +4,11 @@ font-family: 'Rasa', serif;
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Gabriela', serif;*/
+
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -43,7 +45,9 @@ a {
   margin: 0 auto;
 }
 
+
 /*HEADER*/
+
 header {
   position: fixed;
   width: 100%;
@@ -62,7 +66,8 @@ header h1 {
   display: table;
 }
 
-#logo, #navbar a {
+#logo,
+#navbar a {
   color: white;
 }
 
@@ -116,6 +121,7 @@ span.separator {
   line-height: 2vw;
 }
 
+
 /*BANNER SECTION*/
 
 div#cycler {
@@ -124,7 +130,6 @@ div#cycler {
   height: 90vh;
   width: 100%;
   background: green;
-
 }
 
 #cycler img {
@@ -147,7 +152,7 @@ div#cycler {
 
 i.fa.fa-chevron-circle-down {
   font-size: 4vw;
-  color: rgb(196,194,194);
+  color: rgb(196, 194, 194);
   margin: 0 auto;
 }
 
@@ -155,7 +160,9 @@ i.fa.fa-chevron-circle-down:hover {
   color: white;
 }
 
+
 /* entypo */
+
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
   color: white;
@@ -166,7 +173,9 @@ i.fa.fa-chevron-circle-down:hover {
   color: green;
 }
 
+
 /*COUNTDOWN*/
+
 .countdown {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 10px;
@@ -187,8 +196,8 @@ i.fa.fa-chevron-circle-down:hover {
 
 span.decoration {
   font-size: 2vw;
-
 }
+
 
 
 /*SECTION FORMAT*/
@@ -226,6 +235,7 @@ section p {
   border-bottom: 1px #cccccc solid;
 }
 
+
 /*STORY SECTION*/
 
 #story p {
@@ -236,9 +246,11 @@ section p {
   margin-bottom: 30px;
 }
 
+
 /*COLLAGE*/
 
-section.collage {
+
+/*section.collage {
   width: 100%;
 }
 
@@ -246,9 +258,30 @@ section.collage {
   flex: 1;
   width: 25%;
   height: 25%;
+}*/
+
+section.collage {
+  font-size: 0;
+  /*display: -ms-flexbox;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+/*  display: -webkit-box;*/
+}
+
+.collage div { 
+  flex: auto; 
+  width: 300px;  
+}
+
+.collage div img { 
+  width: 100%; 
+  height: auto; 
 }
 
 /*HOTEL INFORMATION*/
+
 #hotel-info .hotel-section {
   width: 330px;
 }
@@ -285,6 +318,7 @@ a.hotel-link {
   color: rgb(0, 40, 77);
 }
 
+
 /*EVENTS*/
 
 #events ul {
@@ -302,7 +336,7 @@ a.hotel-link {
   font-size: 1.2vw;
   text-align: right;
   flex: 1;
-  margin: 0.5vw 5vw 0 0;  
+  margin: 0.5vw 5vw 0 0;
 }
 
 #events ul li .event {
