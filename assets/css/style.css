@@ -222,13 +222,14 @@ section h3 {
 
 section h4 {
   font-family: 'Kurale', serif;
-  font-size: 1.7vw;
+  font-size: 25px;
 }
 
 section p {
   font-family: 'Kurale', serif;
-  font-size: 1.5vw;
-  line-height: 2vw;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 10px 0;
 }
 
 .bottom-border {
@@ -241,7 +242,7 @@ section p {
 #story p {
   width: 90%;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   margin-bottom: 30px;
 }
@@ -249,25 +250,12 @@ section p {
 
 /*COLLAGE*/
 
-
-/*section.collage {
-  width: 100%;
-}
-
-.collage.flex-row img {
-  flex: 1;
-  width: 25%;
-  height: 25%;
-}*/
-
 section.collage {
   font-size: 0;
-  /*display: -ms-flexbox;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
-/*  display: -webkit-box;*/
 }
 
 .collage div { 
@@ -289,26 +277,25 @@ section.collage {
 #hotel-info h4 {
   color: #cccccc;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 20px;  
 }
 
 .hotel-section ul li {
-  margin-bottom: 1.5vw;
+  margin-bottom: 20px;
   position: relative;
 }
 
 .hotel-name {
   font-family: 'Kurale', serif;
   color: #333333;
-  font-size: 1.1vw;
+  font-size: 17px;
+  line-height: 20px;
   font-weight: bold;
-  line-height: 1.3vw;
-  margin-bottom: 1vw;
 }
 
 p.hotel-info {
-  font-size: 1.1vw;
-  line-height: 1.3vw;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 a.hotel-link {
