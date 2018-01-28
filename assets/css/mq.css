@@ -43,8 +43,8 @@
   /*STORY SECTION*/
 
   /*COLLAGE*/
-  .collage.flex-row {
-    flex-direction: column;
+  .collage div img {
+    width: 100%;
   }
 
 
