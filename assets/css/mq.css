@@ -49,10 +49,10 @@
     width: 100%;
   }
 
-/*  .collage div img {
-    width: 100%;
-    
-  }*/
+  .collage div img {
+    min-width: 100%;
+    height: auto;
+  }
 
 
 }
