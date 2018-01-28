@@ -45,9 +45,14 @@
 
 
   /*COLLAGE*/
-  .collage div img {
+  .collage div {
     width: 100%;
   }
+
+/*  .collage div img {
+    width: 100%;
+    
+  }*/
 
 
 }
