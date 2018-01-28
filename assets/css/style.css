@@ -320,7 +320,7 @@ a.hotel-link {
 #events ul li .time {
   color: #b3b3b3;
   font-family: 'Kurale', serif;
-  font-size: 1.2vw;
+  font-size: 17px;
   text-align: right;
   flex: 1;
   margin: 0.5vw 5vw 0 0;
@@ -335,6 +335,6 @@ a.hotel-link {
 }
 
 #events ul li .event .details {
-  font-size: 1vw;
-  line-height: 1.3vw;
+  font-size: 15px;
+  line-height: 17px;
 }

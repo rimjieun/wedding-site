@@ -58,4 +58,28 @@
     margin: 10px auto;
   }
 
+  /*EVENTS SECTION*/
+  #events ul {
+    max-width: 80%;/*
+    background: green;*/
+  }
+
+  #events ul li {
+    margin-bottom: 20px;
+  }
+
+  #events ul li.flex-row {
+    flex-direction: column;
+  }
+
+  #events ul li .event .name,
+  #events ul li .time,
+  #events ul li .event .details {
+    text-align: center;
+  }
+
+  #events ul li .time {
+    margin: 0;
+  }
+
 }
