@@ -256,11 +256,13 @@ section.collage {
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .collage div { 
   flex: auto; 
-  width: 300px;  
+  /*width: 300px;*/
+  width: 25%;  
 }
 
 .collage div img { 

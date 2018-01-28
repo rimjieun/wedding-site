@@ -1,3 +1,4 @@
+// IMAGE CYCLER
 function cycleImages() {
   var active = $('#cycler .active');
   var next = (active.next().length > 0) ? active.next() : $('#cycler img:first');
@@ -8,20 +9,7 @@ function cycleImages() {
   });
 }
 
-$(document).ready(function() {
-  // run every 7s
-  setInterval('cycleImages()', 7000);
-
-  $('a[href^="#"]').on('click', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
-
-});
-
+// COUNTDOWN
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 30, 2018 00:00:00").getTime();
 
@@ -52,3 +40,17 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+$(document).ready(function() {
+  // run every 7s
+  setInterval('cycleImages()', 7000);
+
+  $('a[href^="#"]').on('click', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
+
+});
