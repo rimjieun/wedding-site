@@ -57,7 +57,7 @@ function loadBrowserImages() {
 }
 
 function loadMobileImages() {
-    $('#cycler').append($('<img id="size-ref" class="active" src="./assets/img/photos/portrait/selected/001.jpg" alt="Naeun & Jeremy" />'));
+  $('#cycler').append($('<img id="size-ref" class="active" src="./assets/img/photos/portrait/selected/001.jpg" alt="Naeun & Jeremy" />'));
 
   $('#cycler').append($('<img src="./assets/img/photos/portrait/selected/002.jpg" alt="Naeun & Jeremy" />'));
 
@@ -73,6 +73,7 @@ function loadMobileImages() {
 if ($(window).width() > 400) {
   loadBrowserImages();
 } else if ($(window).width() <= 400) {
+  $('div#cycler').css({'padding-top': '0'});
   loadMobileImages();
 }
 
