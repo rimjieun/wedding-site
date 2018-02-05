@@ -79,6 +79,7 @@ if ($(window).width() > 400) {
 
 $(document).ready(function() {
 
+  $('html').css({'visibility': 'visible'});
 
   // run every 7s
   setInterval('cycleImages()', 7000);
