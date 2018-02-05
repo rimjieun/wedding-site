@@ -112,8 +112,8 @@ header .bottom-header {
   color: white;
   height: 40px;
   text-align: right;
-  padding-right: 98px;
-  line-height: 40px
+  padding: 0 98px;
+  line-height: 40px;
 }
 
 span.separator {
@@ -177,10 +177,12 @@ i.fa.fa-chevron-circle-down:hover {
 .countdown {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 10px;
-  width: 300px;
-  margin: 0 auto 70px;
+  width: 330px;
+  /*margin: 0 auto 70px;*/
   align-items: center;
   color: #999999;
+  /*background: green;*/
+  line-height: 0px;
 }
 
 .countdown .flex-col {
@@ -190,6 +192,13 @@ i.fa.fa-chevron-circle-down:hover {
 .countdown .digits {
   font-size: 25px;
   line-height: 40px;
+  margin-right: 7px;
+  /*font-weight: bold;*/
+}
+
+.countdown .label {
+  font-size: 12px;
+  /*font-style: italic;*/
 }
 
 span.decoration {
