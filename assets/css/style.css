@@ -127,7 +127,7 @@ span.separator {
 div#cycler {
   position: relative;
   padding-top: 30px;
-  height: 90vh;
+  /*height: 90vh;*/
   width: 100%;
   background: green;
 }
@@ -146,7 +146,7 @@ div#cycler {
   z-index: 4;
   width: 100%;
   position: absolute;
-  bottom: -20px;
+  bottom: 3%;
   text-align: center;
 }
 
