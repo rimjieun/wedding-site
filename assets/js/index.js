@@ -53,15 +53,10 @@ $(document).ready(function() {
     }, 500);
   });
 
-
   $('#cycler').height($('img#size-ref').height());
 
 });
 
 $(window).resize(function(e) {
-  var image = $('img#size-ref');
-  console.log('width: ' + image.width());
-  console.log('height: ' + image.height());
-
-  $('#cycler').height(image.height());
+  $('#cycler').height($('img#size-ref').height());
 });

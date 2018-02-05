@@ -127,9 +127,7 @@ span.separator {
 div#cycler {
   position: relative;
   padding-top: 30px;
-  /*height: 90vh;*/
   width: 100%;
-  background: green;
 }
 
 #cycler img {
