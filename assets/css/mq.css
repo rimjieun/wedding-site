@@ -3,13 +3,13 @@
     /*background: orange;*/
   }
 
-  header {
+/*  header {
     height: 80px;
   }
 
   header .top-header {
     padding: 0;
-  }
+  }*/
 
   div#cycler {
     height: 23vh;
@@ -20,6 +20,11 @@
     position: absolute;
     top: 4px;
     left: 30px;
+  }
+
+  header {
+    display: none;
+    visibility: hidden;
   }
 
   #navbar {
