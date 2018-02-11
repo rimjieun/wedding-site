@@ -239,21 +239,29 @@ section p {
   margin: 10px 0;
 }
 
-.bottom-border {
+/*.bottom-border {
   border-bottom: 1px #cccccc solid;
-}
+}*/
 
 
 /*STORY SECTION*/
 
 #story p {
-  width: 90%;
+  width: 80%;
   text-align: center;
+  text-align: left;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 30px;
 }
 
+span.first-letter {
+  font-size: 40px;
+}
+
+span.italics {
+  font-style: italic;
+}
 
 /*COLLAGE*/
 
