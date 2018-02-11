@@ -62,9 +62,9 @@ function loadMobileImages() {
     .append($('<img src="./assets/img/photos/portrait/selected/006.jpg" alt="Naeun & Jeremy" />'));
 }
 
-if ($(window).width() > 400) {
+if ($(window).width() > 600) {
   loadBrowserImages();
-} else if ($(window).width() <= 400) {
+} else if ($(window).width() <= 600) {
   $('div#cycler').css({'padding-top': '0'});
   loadMobileImages();
 }
