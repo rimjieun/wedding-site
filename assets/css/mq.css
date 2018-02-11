@@ -46,7 +46,10 @@
   }
 
   /*STORY SECTION*/
-
+  #story p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
   /*COLLAGE*/
   .collage div {
@@ -61,6 +64,20 @@
   #hotel-info .hotel-section {
     width: 85%;
     margin: 10px auto;
+  }
+
+  #hotel-info h4 {
+    /*background: yellow;*/
+  }
+
+  .hotel-name {
+    /*background: orange;*/
+    font-size: 15px;
+  }
+
+  p.hotel-info {
+    /*background: green;*/
+    font-size: 12px;
   }
 
   /*EVENTS SECTION*/
@@ -80,6 +97,18 @@
   #events ul li .time,
   #events ul li .event .details {
     text-align: center;
+  }
+
+  #events ul li .event .name {
+    font-size: 15px;
+  }
+
+  #events ul li .time {
+    font-size: 12px;
+  }
+
+  #events ul li .event .details {
+    font-size: 10px;
   }
 
   #events ul li .time {
