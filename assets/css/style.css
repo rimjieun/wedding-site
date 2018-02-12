@@ -283,7 +283,6 @@ section.collage {
 .collage div img { 
   width: 100%; 
   height: auto; 
-  padding: 10px;
   background: green;
   overflow: hidden;
 }
