@@ -44,22 +44,22 @@ var x = setInterval(function() {
 function loadBrowserImages() {
 
   $('#cycler')
-    .append($('<img id="size-ref" class="active" src="./assets/img/photos/landscape/cropped/layered/006.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/collage/001.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/landscape/cropped/layered/003.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/collage/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/landscape/cropped/layered/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/collage/003.jpg" alt="Naeun & Jeremy" />'));
+    .append($('<img id="size-ref" class="active size-ref" src="./assets/img/photos/landscape/cropped/layered/006.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/collage/001.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/landscape/cropped/layered/003.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/collage/002.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/landscape/cropped/layered/002.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/collage/003.jpg" alt="Naeun & Jeremy" />'));
 }
 
 function loadMobileImages() {
   $('#cycler')
-    .append($('<img id="size-ref" class="active" src="./assets/img/photos/portrait/selected/cropped/001.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/selected/cropped/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/selected/cropped/003.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/selected/cropped/004.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/selected/cropped/005.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img src="./assets/img/photos/portrait/selected/cropped/006.jpg" alt="Naeun & Jeremy" />'));
+    .append($('<img class="active size-ref" src="./assets/img/photos/portrait/selected/cropped/001.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/selected/cropped/002.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/selected/cropped/003.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/selected/cropped/004.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/selected/cropped/005.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="./assets/img/photos/portrait/selected/cropped/006.jpg" alt="Naeun & Jeremy" />'));
 }
 
 if ($(window).width() > 600) {
@@ -71,6 +71,7 @@ if ($(window).width() > 600) {
 
 $(document).ready(function() {
 
+  console.log('container height: ' + $('img.size-ref').height());
   // run every 7s
   setInterval('cycleImages()', 7000);
 
@@ -82,12 +83,12 @@ $(document).ready(function() {
     }, 500);
   });
 
-  $('#cycler').height($('img#size-ref').height());
+  $('#cycler').height($('img.size-ref').height());
 
 
 
 });
 
 $(window).resize(function(e) {
-  $('#cycler').height($('img#size-ref').height());
+  $('#cycler').height($('img.size-ref').height());
 });

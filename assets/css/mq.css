@@ -33,7 +33,7 @@
 
   i.fa.fa-bars {
     display: block;
-    font-size: 5vw;
+    font-size: 20px;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -45,11 +45,22 @@
     margin: 0 auto;
   }
 
+  /*SECTION*/
+  section {
+    padding: 11vw 0 4vw;
+    margin: -4.5vw auto 0;
+  }
+
+  #story p,
+  #hotel-info .hotel-section {
+    width: 100%;
+  }
+
   /*STORY SECTION*/
   #story p {
     font-size: 15px;
     line-height: 20px;
-    width: 90%;
+    /*width: 100%;*/
   }
 
   /*COLLAGE*/
@@ -63,7 +74,7 @@
   }
 
   #hotel-info .hotel-section {
-    width: 85%;
+    /*width: 85%;*/
     margin: 10px auto;
     text-align: center;
   }
@@ -79,7 +90,7 @@
 
   p.hotel-info {
     /*background: green;*/
-    font-size: 12px;
+    font-size: 15px;
   }
 
   /*EVENTS SECTION*/
