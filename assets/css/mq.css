@@ -147,7 +147,7 @@
   }
 
 }
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
   /*COLLAGE*/
   .collage div {
     width: 50%;
