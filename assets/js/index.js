@@ -69,7 +69,7 @@ if ($(window).width() > 600) {
   $('div#cycler').css({ 'padding-top': '0' });
   loadMobileImages();
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('header')
         .fadeOut(500)
         .css("display", "else");
