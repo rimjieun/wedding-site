@@ -9,7 +9,7 @@
 
   header .top-header {
     height: 50px;
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   header h1 {
@@ -31,9 +31,8 @@
 
   #side-nav-btn {
     position: absolute;
-    top: 4.3px;
+    top: 10px;
     right: 15px;
-    padding: 5px 8px;
   }
 
   i.fa.fa-bars {
