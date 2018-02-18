@@ -86,11 +86,6 @@
     /*width: 100%;*/
   }
 
-  /*COLLAGE*/
-  .collage div {
-    width: 50%;
-  }
-
   /*HOTEL SECTION*/
   #hotel-info .flex-row {
     flex-direction: column;
@@ -151,4 +146,10 @@
     margin: 0;
   }
 
+}
+@media screen and (max-width: 600px) {}
+  /*COLLAGE*/
+  .collage div {
+    width: 50%;
+  }
 }
