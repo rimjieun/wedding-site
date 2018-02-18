@@ -44,6 +44,10 @@
   span.tiny {
     font-size: 23px;
   }
+
+  [class*='entypo-']:before {
+    font-size: 40px;
+  }
   /*COUNTDOWN*/
 
   .bottom-header {
