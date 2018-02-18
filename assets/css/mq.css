@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
   body {
-    /*background: orange;*/
+    position: relative;
   }
 
   div#cycler {
@@ -29,10 +29,12 @@
     line-height: 40px;
   }
 
-  #side-nav-btn {
+  header .side-nav-btn,
+  #mobile-menu {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 5px;
+    right: 8px;
+    padding: 5px 7px;
   }
 
   i.fa.fa-bars {
@@ -56,6 +58,14 @@
 
   .countdown {
     min-width: 270px;
+  }
+
+  #mobile-menu {
+    position: fixed;
+    background: rgb(0, 26, 51);
+    border-radius: 1px;
+    z-index: 6;
+    display: none;
   }
 
   /*SECTION*/

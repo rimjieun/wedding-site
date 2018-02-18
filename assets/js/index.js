@@ -73,8 +73,10 @@ if ($(window).width() > 600) {
       $('header')
         .fadeOut(500)
         .css("display", "else");
+      $('#mobile-menu').fadeIn(500);
     } else {
       $('header').fadeIn(500);
+      $('#mobile-menu').fadeOut(500);
     }
   });
 }
