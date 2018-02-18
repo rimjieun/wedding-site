@@ -7,43 +7,47 @@
     height: 23vh;
   }
 
-  #logo {
-    font-size: 8.5vw;
-    position: absolute;
-    top: 4px;
-    left: 30px;
-  }
-
   header .top-header {
-    height: 45px;
+    height: 50px;
+    padding: 0 15px;
   }
 
   header h1 {
-    height: 45px;
-    display: table;
+    height: 50px;
   }
 
   header .location {
     display: none;
   }
 
-  #logo {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
   #navbar {
     display: none;
   }
 
-  i.fa.fa-bars {
-    display: block;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+  #logo {
+    font-size: 36px;
+    line-height: 40px;
   }
 
+  #side-nav-btn {
+    position: absolute;
+    top: 4.3px;
+    right: 15px;
+    background: lightgrey;
+    border-radius: 2px;
+    border: 1px #999999 solid;
+    padding: 5px 8px;
+  }
+
+  i.fa.fa-bars {
+    display: block;
+    font-size: 28px;
+    color: rgb(0, 26, 51);
+  }
+
+  span.tiny {
+    font-size: 23px;
+  }
   /*COUNTDOWN*/
 
   .bottom-header {
