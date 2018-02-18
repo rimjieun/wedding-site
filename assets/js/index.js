@@ -85,6 +85,7 @@ $(document).ready(function() {
 
   $('#cycler').height($('img.size-ref').height());
 
+console.log('container height 2: ' + $('img.size-ref').height());
 
 
 });
