@@ -99,12 +99,6 @@ span.tiny {
   background: rgb(0, 40, 77);
 }
 
-i.fa.fa-bars {
-  color: white;
-  font-size: 2.5vw;
-  display: none;
-}
-
 header .bottom-header {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5vw;
@@ -120,6 +114,100 @@ span.separator {
   font-size: 2vw;
   line-height: 2vw;
 }
+
+
+
+
+/*SIDE NAV*/
+
+#mobile-menu-btn {
+  position: fixed;
+  padding: 10px 14px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: rgb(0, 26, 51);
+}
+
+#mobile-menu-btn:hover {
+  background: rgb(0, 40, 77);
+  cursor: pointer;
+}
+
+i.fa.fa-bars {
+  color: white;
+  font-size: 2.5vw;
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  right: 0;
+  background: rgb(0, 26, 51);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 20px 0 20px 0;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.sidenav-width {
+  width: 250px;
+}
+
+.sidenav a:not(.logo) {
+  padding: 20px 8px 20px 45px;
+}
+
+.sidenav a:not(.closebtn):not(.logo):hover {
+  background: rgb(0, 40, 77);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .logo {
+  width: 75%;
+  margin: 0 auto;
+  border-bottom: 1px white solid;
+}
+
+.sidenav p {
+  font-size: 40px;
+  margin: 0 0 5px;
+  text-align: left
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
 
 
 /*BANNER SECTION*/
@@ -159,6 +247,9 @@ i.fa.fa-chevron-circle-down:hover {
 }
 
 
+
+
+
 /* entypo */
 
 [class*="entypo-"]:before {
@@ -170,6 +261,9 @@ i.fa.fa-chevron-circle-down:hover {
 .arrow a:hover {
   color: green;
 }
+
+
+
 
 
 /*COUNTDOWN*/
@@ -200,6 +294,9 @@ i.fa.fa-chevron-circle-down:hover {
 span.decoration {
   font-size: 2vw;
 }
+
+
+
 
 
 
@@ -235,6 +332,9 @@ section p {
   margin: 10px 0;
 }
 
+
+
+
 /*.bottom-border {
   border-bottom: 1px #cccccc solid;
 }*/
@@ -259,6 +359,9 @@ span.italics {
   font-style: italic;
 }
 
+
+
+
 /*COLLAGE*/
 
 section.collage {
@@ -270,18 +373,21 @@ section.collage {
   width: 100%;
 }
 
-.collage div { 
-  flex: auto; 
+.collage div {
+  flex: auto;
   /*width: 300px;*/
-  width: 25%;  
+  width: 25%;
 }
 
-.collage div img { 
-  width: 100%; 
-  height: auto; 
+.collage div img {
+  width: 100%;
+  height: auto;
   background: green;
   overflow: hidden;
 }
+
+
+
 
 /*HOTEL INFORMATION*/
 
@@ -292,7 +398,7 @@ section.collage {
 #hotel-info h4 {
   color: #cccccc;
   text-align: center;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 .hotel-section ul li {
@@ -321,35 +427,32 @@ a.hotel-link {
 }
 
 
-/*EVENTS*/
+/*details*/
 
-#events ul {
-  max-width: 60%;
-  margin: 0 auto;
+#details .fa {
+  font-size: 50px;
+  color: #cccccc;
 }
 
-#events ul li {
-  margin-bottom: 3vw;
+/*SOMETHING*/
+
+.no-js #loader {
+  display: none;
 }
 
-#events ul li .time {
-  color: #b3b3b3;
-  font-family: 'Kurale', serif;
-  font-size: 17px;
-  text-align: right;
-  flex: 1;
-  margin: 0.5vw 5vw 0 0;
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
 }
 
-#events ul li .event {
-  flex: 2;
-}
-
-#events ul li .event .name {
-  padding: 0;
-}
-
-#events ul li .event .details {
-  font-size: 15px;
-  line-height: 17px;
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/preloader/preloader.gif) center no-repeat #fff;
 }
