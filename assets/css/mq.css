@@ -3,14 +3,6 @@
     /*background: orange;*/
   }
 
-/*  header {
-    height: 80px;
-  }
-
-  header .top-header {
-    padding: 0;
-  }*/
-
   div#cycler {
     height: 23vh;
   }
@@ -22,9 +14,22 @@
     left: 30px;
   }
 
-  header {
-    /*display: none;*/
-    /*visibility: hidden;*/
+  header .top-header {
+    height: 45px;
+  }
+
+  header h1 {
+    height: 45px;
+    display: table;
+  }
+
+  header .location {
+    display: none;
+  }
+
+  #logo {
+    display: table-cell;
+    vertical-align: middle;
   }
 
   #navbar {
@@ -41,8 +46,12 @@
 
   /*COUNTDOWN*/
 
-  .coundtown {
-    margin: 0 auto;
+  .bottom-header {
+    justify-content: center;
+  }
+
+  .countdown {
+    min-width: 270px;
   }
 
   /*SECTION*/

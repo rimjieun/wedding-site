@@ -178,10 +178,8 @@ i.fa.fa-chevron-circle-down:hover {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 10px;
   width: 330px;
-  /*margin: 0 auto 70px;*/
   align-items: center;
   color: #999999;
-  /*background: green;*/
   line-height: 0px;
 }
 
@@ -193,12 +191,10 @@ i.fa.fa-chevron-circle-down:hover {
   font-size: 25px;
   line-height: 40px;
   margin-right: 7px;
-  /*font-weight: bold;*/
 }
 
 .countdown .label {
   font-size: 12px;
-  /*font-style: italic;*/
 }
 
 span.decoration {

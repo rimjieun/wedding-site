@@ -68,6 +68,15 @@ if ($(window).width() > 600) {
 } else if ($(window).width() <= 600) {
   $('div#cycler').css({ 'padding-top': '0' });
   loadMobileImages();
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('header')
+        .fadeOut(500)
+        .css("display", "else");
+    } else {
+      $('header').fadeIn(500);
+    }
+  });
 }
 
 $(window).on('load', function() {
