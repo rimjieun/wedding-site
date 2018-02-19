@@ -75,6 +75,10 @@
     margin: -4.5vw auto 0;
   }
 
+  section h3 {
+    font-size: 30px;
+  }
+
   #story p,
   #hotel-info .hotel-section {
     width: 100%;
@@ -84,7 +88,6 @@
   #story p {
     font-size: 15px;
     line-height: 20px;
-    /*width: 100%;*/
   }
 
   /*HOTEL SECTION*/
@@ -93,61 +96,32 @@
   }
 
   #hotel-info .hotel-section {
-    /*width: 85%;*/
     margin: 10px auto;
     text-align: center;
   }
 
-  #hotel-info h4 {
-    /*background: yellow;*/
-  }
-
   .hotel-name {
-    /*background: orange;*/
     font-size: 15px;
   }
 
   p.hotel-info {
-    /*background: green;*/
     font-size: 15px;
   }
 
-  /*EVENTS SECTION*/
-  #events ul {
-    max-width: 85%;
-  }
-
-  #events ul li {
-    margin-bottom: 20px;
-  }
-
-  #events ul li.flex-row {
+  /*DETAILS SECTION*/
+  #details div.flex-row {
+    width: 90%;
     flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
 
-  #events ul li .event .name,
-  #events ul li .time,
-  #events ul li .event .details {
-    text-align: center;
-  }
-
-  #events ul li .event .name {
-    font-size: 15px;
-  }
-
-  #events ul li .time {
-    font-size: 12px;
-  }
-
-  #events ul li .event .details {
-    font-size: 10px;
-  }
-
-  #events ul li .time {
-    margin: 0;
+  #details #map {
+    width: 90%;
   }
 
 }
+
 @media screen and (max-width: 600px) {
   /*COLLAGE*/
   .collage div {

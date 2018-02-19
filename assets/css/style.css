@@ -46,6 +46,7 @@ a {
 }
 
 
+
 /*HEADER*/
 
 header {
@@ -114,6 +115,7 @@ span.separator {
   font-size: 2vw;
   line-height: 2vw;
 }
+
 
 
 
@@ -210,6 +212,7 @@ i.fa.fa-bars {
 
 
 
+
 /*BANNER SECTION*/
 
 div#cycler {
@@ -250,6 +253,7 @@ i.fa.fa-chevron-circle-down:hover {
 
 
 
+
 /* entypo */
 
 [class*="entypo-"]:before {
@@ -261,6 +265,7 @@ i.fa.fa-chevron-circle-down:hover {
 .arrow a:hover {
   color: green;
 }
+
 
 
 
@@ -295,11 +300,6 @@ span.decoration {
   font-size: 2vw;
 }
 
-
-
-
-
-
 /*SECTION FORMAT*/
 
 section {
@@ -307,15 +307,15 @@ section {
 }
 
 .section-container {
-  padding: 11vw 0 4vw;
+  padding: 11vw 0 8vw;
   margin: -4.5vw auto 0;
   width: 80%;
 }
 
 section h3 {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 35px;
+  margin-bottom: 50px;
   text-align: center;
   line-height: 35px;
 }
@@ -332,14 +332,6 @@ section p {
   margin: 10px 0;
 }
 
-
-
-
-/*.bottom-border {
-  border-bottom: 1px #cccccc solid;
-}*/
-
-
 /*STORY SECTION*/
 
 #story p {
@@ -349,6 +341,7 @@ section p {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 30px;
+
 }
 
 span.first-letter {
@@ -356,8 +349,11 @@ span.first-letter {
 }
 
 span.italics {
+   font-family: 'Julius Sans One', sans-serif;
   font-style: italic;
+  font-size: 20px;
 }
+
 
 
 
@@ -389,34 +385,63 @@ section.collage {
 
 
 
+
 /*HOTEL INFORMATION*/
+
+#hotel-info img {
+  display: block;
+  width: 318px;
+  height: 180px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
 
 #hotel-info .hotel-section {
   width: 330px;
 }
 
 #hotel-info h4 {
+   font-family: 'Julius Sans One', sans-serif;
   color: #cccccc;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hotel-name:hover,
+a.hotel-info:hover {
+  color: #005cb3;
 }
 
 .hotel-section ul li {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
+  align-items: center;
+  width: 318px;
+  height: 380px;
 }
 
 .hotel-name {
   font-family: 'Kurale', serif;
+  font-family: 'Julius Sans One', sans-serif;
   color: #333333;
-  font-size: 17px;
+  color: rgb(0, 26, 51);;
+  font-size: 20px;
   line-height: 20px;
   font-weight: bold;
 }
 
-p.hotel-info {
+a.hotel-info,
+#hotel-info p {
+  font-family: 'Kurale', serif;
+  text-align: left;
+  display: block;
   font-size: 15px;
   line-height: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 a.hotel-link {
@@ -427,12 +452,59 @@ a.hotel-link {
 }
 
 
+
 /*details*/
+
+#details .flex-row { 
+  width: 950px;
+  margin: 0 auto;
+}
+
+#details .info {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+#details .info .card {
+  margin: 20px 0;
+}
+
+#details h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 10px 0;
+}
+
+.line {
+  width: 25px;
+  height: 1px;
+  background: #cccccc;
+  margin: 0 auto;
+}
+
+#details .info p {
+  font-family: 'Kurale', serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px
+  color: rgb(0, 40, 77);
+}
 
 #details .fa {
   font-size: 50px;
-  color: #cccccc;
+  color: rgb(0, 40, 77);
 }
+
+#details #map {
+  height: 400px;
+  width: 500px;
+  border: 5px #cccccc solid;
+}
+
 
 /*SOMETHING*/
 

@@ -101,7 +101,7 @@ $(window).on('load', function() {
     event.preventDefault();
     $('#side-nav').toggleClass('sidenav-width');
   });
-  
+
   $('#cycler').height($('img.size-ref').height());
 
 
