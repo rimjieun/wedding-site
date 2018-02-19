@@ -52,7 +52,6 @@ function loadBrowserImages() {
     .append($('<img class="size-ref" src="assets/img/photos/portrait/collage/003.jpg" alt="Naeun & Jeremy" />'));
 }
 
-
 function loadMobileImages() {
   $('#cycler')
     .append($('<img class="active size-ref" src="assets/img/photos/portrait/selected/cropped/001.jpg" alt="Naeun & Jeremy" />'))
