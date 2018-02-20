@@ -45,7 +45,12 @@ a {
   margin: 0 auto;
 }
 
-
+.line {
+  width: 25px;
+  height: 1px;
+  background: #cccccc;
+  margin: 0 auto;
+}
 
 /*HEADER*/
 
@@ -116,8 +121,10 @@ span.separator {
   line-height: 2vw;
 }
 
-
-
+.rsvp-btn {
+  background: rgb(0, 40, 77);
+  background: #4d4d4d;
+}
 
 
 /*SIDE NAV*/
@@ -315,9 +322,13 @@ section {
 section h3 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 35px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   text-align: center;
   line-height: 35px;
+}
+
+section .section-content {
+  margin: 50px auto 0;
 }
 
 section h4 {
@@ -388,6 +399,28 @@ section.collage {
 
 /*HOTEL INFORMATION*/
 
+#hotel-info .blurb {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+#hotel-info .blurb p {
+  font-family: 'Kurale', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+}
+
+#hotel-info .blurb a {
+  color: rgb(0, 40, 77);
+  font-weight: bold;
+}
+
+#hotel-info .blurb a:hover {
+  color: #005cb3;
+}
+
 #hotel-info img {
   display: block;
   width: 100%;
@@ -396,12 +429,16 @@ section.collage {
   border-radius: 3px;
 }
 
+#hotel-info img:hover {
+  box-shadow: 0 8px 13px rgba(0,0,0,.25);
+}
+
 #hotel-info .hotel-section {
   width: 330px;
 }
 
 #hotel-info h4 {
-   font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   color: #cccccc;
   text-align: center;
   margin-bottom: 30px;
@@ -452,7 +489,6 @@ a.hotel-info:hover {
 
 #details .flex-row { 
   width: 950px;
-  margin: 0 auto;
 }
 
 #details .info {
@@ -471,13 +507,6 @@ a.hotel-info:hover {
   font-weight: bold;
   color: #cccccc;
   margin: 10px 0;
-}
-
-.line {
-  width: 25px;
-  height: 1px;
-  background: #cccccc;
-  margin: 0 auto;
 }
 
 #details .info p {
@@ -499,6 +528,51 @@ a.hotel-info:hover {
   width: 500px;
   border: 5px #cccccc solid;
 }
+
+/*ACTIVITIES*/
+
+/*------ACCORDION------*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*------ACCORDION------*/
+
+
 
 
 /*SOMETHING*/
@@ -522,4 +596,16 @@ a.hotel-info:hover {
   height: 100%;
   z-index: 9999;
   background: url(../img/preloader/preloader.gif) center no-repeat #fff;
+}
+
+
+/*RSVP*/
+
+
+#RSVPifyIFrame {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  height: 1000px;
+  overflow: auto;
 }

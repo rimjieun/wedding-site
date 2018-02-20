@@ -84,6 +84,7 @@ if ($(window).width() > 600) {
 }
 
 $(window).on('load', function() {
+
   $(".se-pre-con").css('display', 'none');
   // run every 7s
   setInterval('cycleImages()', 7000);
@@ -103,6 +104,7 @@ $(window).on('load', function() {
 
   $('#cycler').height($('img.size-ref').height());
 
+  $('#RSVPifyIFrame iframe header').css('display', 'none');
 
 });
 
@@ -126,3 +128,26 @@ $(window).resize(function(e) {
     tOut = setTimeout(refresh, 100);
   }
 });
+
+// ACCORDION
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+// RSVP
+
+
+
+// ACCORDION
