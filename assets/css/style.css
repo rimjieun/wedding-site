@@ -571,6 +571,7 @@ a.hotel-info:hover {
 .activities-mobile button {
   height: 25vw;
   padding: 0;
+  margin: 10px 0;
 }
 
 .table {
@@ -586,7 +587,7 @@ a.hotel-info:hover {
   font-size: 17px;
   display: table-cell;
   vertical-align: middle;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .active, .accordion:hover {
@@ -599,15 +600,17 @@ a.hotel-info:hover {
 }
 
 .panel {
-    padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    position: relative;
 }
 
 .panel p {
   font-size: 15px;
+  padding: 0 18px;
+  margin-bottom: 40px
 }
 
 .panel p a {
@@ -618,6 +621,41 @@ a.hotel-info:hover {
 .panel p a:hover {
   color: #005cb3;
 }
+
+.panel .directions,
+.panel .website {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  background: rgb(0, 26, 51);
+  color: white;
+  display: table;
+}
+
+.directions i,
+.website i {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.panel .directions:hover,
+.panel .website:hover {
+  background: rgb(0, 40, 77);
+  cursor: pointer;
+}
+
+.panel .directions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.panel .website {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /*------ACCORDION------*/
 
 /*OTHER*/
