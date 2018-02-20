@@ -95,6 +95,10 @@
     flex-direction: column;
   }
 
+  #hotel-info .hotel-section h4 {
+    font-size: 20px;
+  }
+
   #hotel-info ul {
     display: none;
   }
