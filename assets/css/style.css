@@ -614,6 +614,7 @@ a.hotel-info:hover {
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   font-size: 17px;
+  line-height: 23px;
   display: table-cell;
   vertical-align: middle;
   padding: 0 10px;
