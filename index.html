@@ -140,6 +140,7 @@
             <p>Malibu, CA 90265
             </p>
           </div>
+          <a class="rsvp-btn">RSVP</a>
         </div>
         <div id="map">
         </div>
@@ -925,12 +926,18 @@
   <script type="text/javascript" src="assets/js/index.js"></script>
   <script>
   function initMap() {
-    var calamigosRanch = { lat: 34.092137, lng: -118.817412 };
+    var center;
+    var calamigosRanch = { lat: 34.0721855, lng: -118.817412 };
+    if ($(window).width() > 600) {
+      center = { lat: 34.0721855, lng: -118.5305485};
+    } else if ($(window).width() <= 600) {
+      center = calamigosRanch;
+    }
+
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
-      center: calamigosRanch,
+      zoom: 9,
+      center: center,
       disableDefaultUI: true
-      // streetViewControl: false, 
     });
     var marker = new google.maps.Marker({
       position: calamigosRanch,
