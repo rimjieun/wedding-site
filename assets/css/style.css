@@ -399,28 +399,6 @@ section.collage {
 
 /*HOTEL INFORMATION*/
 
-#hotel-info .blurb {
-  width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-#hotel-info .blurb p {
-  font-family: 'Kurale', serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-}
-
-#hotel-info .blurb a {
-  color: rgb(0, 40, 77);
-  font-weight: bold;
-}
-
-#hotel-info .blurb a:hover {
-  color: #005cb3;
-}
-
 #hotel-info img {
   display: block;
   width: 100%;
@@ -476,8 +454,7 @@ a.hotel-info:hover {
 
 .hotel-name {
   font-family: 'Julius Sans One', sans-serif;
-  color: #333333;
-  color: rgb(0, 26, 51);;
+  color: rgb(0, 26, 51);
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
@@ -531,6 +508,48 @@ a.hotel-info:hover {
 
 /*ACTIVITIES*/
 
+#activities .activity {
+  /*background: green;*/
+  width: 1000px;
+  margin: 70px auto;
+}
+
+#activities .info {
+  width: 650px;
+  display: table;
+
+}
+
+#activities h4 a {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(0, 26, 51);
+}
+
+#activities .info p {
+  font-size: 15px;
+}
+
+#activities .info p a {
+  color: rgb(0, 40, 77);
+  font-weight: bold;
+}
+
+#activities h4 a:hover,
+#activities .info p a:hover {
+  color: #005cb3;
+}
+
+#activities img {
+  width: 318px;
+  height: 180px;
+  border-radius: 3px;
+}
+
+#activities img:hover {
+  box-shadow: 0 8px 13px rgba(0,0,0,.25);
+}
 /*------ACCORDION------*/
 
 .accordion {
@@ -572,8 +591,30 @@ a.hotel-info:hover {
 
 /*------ACCORDION------*/
 
+/*OTHER*/
 
+.blurb {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
 
+.blurb p,
+#hotel-info .blurb p {
+  font-family: 'Kurale', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+}
+
+.blurb a {
+  color: rgb(0, 40, 77);
+  font-weight: bold;
+}
+
+.blurb a:hover {
+  color: #005cb3;
+}
 
 /*SOMETHING*/
 
