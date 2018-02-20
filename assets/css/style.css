@@ -497,6 +497,11 @@ a.hotel-info:hover {
   width: 950px;
 }
 
+#details .blurb p,
+#registry .blurb p {
+  text-align: center;
+}
+
 #details .info {
   width: 300px;
   height: 300px;
@@ -697,6 +702,7 @@ a.hotel-info:hover {
   width: 90%;
   max-width: 900px;
   margin: 20px auto;
+
 }
 
 .blurb p,
@@ -752,4 +758,29 @@ a.hotel-info:hover {
   margin: 0 auto;
   max-width: 500px;
   overflow: auto;
+}
+
+/*REGISTRY*/
+
+.registries {
+  width: 700px;
+}
+
+.registries img.crate-barrel {
+  width: 350px;
+  margin-top: 10px;
+}
+
+.registries img.zola {
+  width: 200px;
+}
+
+footer {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 15px;
+  padding: 0 70px;
+  width: 100%;
+  background: #cccccc;
+  height: 70px;
+  line-height: 70px;
 }

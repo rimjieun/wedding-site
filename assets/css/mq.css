@@ -139,6 +139,38 @@
     font-size: 20px;
   }
 
+  #registry .flex-row {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #registry .flex-row img.crate-barrel {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  #registry .flex-row img.zola {
+    width: 60%;
+  }
+
+  footer {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  footer .flex-row {
+    flex-direction: column;
+    line-height: 16px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  footer p.company {
+    margin: 10px 0;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
