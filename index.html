@@ -171,7 +171,7 @@
             <li>
               <a href="http://www.thesurfridermalibu.com/" target="_blank"><img class="card-img-top" src="assets/img/hotels/surfrider.jpg" alt="Card image cap"></a>
               <div class="hotel-name">The Surfrider Malibu</div>
-              <a class="hotel-info" href="https://www.google.com/maps/dir/''/The+Surfrider+Malibu,+23033+Pacific+Coast+Hwy,+Malibu,+CA+90265/@34.0371601,-118.7480501,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80e81e2b9110f79d:0xfc639a501727143e!2m2!1d-118.67801!2d34.03718" target="_blank">
+              <a class="hotel-info" href="https://www.google.com/maps/place/The+Surfrider+Malibu/@34.03718,-118.67801,15z/data=!4m5!3m4!1s0x0:0xfc639a501727143e!8m2!3d34.03718!4d-118.67801" target="_blank">
                 23033 Pacific Coast Hwy <br> Malibu, CA 90265
               </a>
               <p>(310) 526-6158</p>
@@ -312,6 +312,7 @@
         <!-- ACCORDION -->
       </div>
     </div>
+    <embed src="https://naeunandjeremy.app.rsvpify.com/">
   </section>
   <section class="collage">
     <div>
@@ -331,7 +332,7 @@
     <div class="section-container">
       <h3>Registry</h3>
       <div class="section-content">
-        <div id="RSVPifyIFrame"></div>
+        <!-- <div id="RSVPifyIFrame"></div> -->
       </div>
     </div>
   </section>
@@ -371,7 +372,17 @@
   }, "#RSVPifyIFrame");
 
   $(function() {
-    
+    $('#RSVPifyIFrame').attr('scrolling', 'yes');
+    var frame = $('#RSVPifyIFrame');
+    console.log(frame);
+    frame.load(function() {
+      frame.contents().find('header').hide();
+    });
+  });
+
+  $('embed').ready(function() {
+    console.log($('embed header'));
+    // console.log(this.children());
   })
   </script>
 </body>

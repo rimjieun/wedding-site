@@ -601,11 +601,14 @@ a.hotel-info:hover {
 
 /*RSVP*/
 
+.wrap.push header {
+  display: none;
+}
+
 
 #RSVPifyIFrame {
   display: block;
   margin: 0 auto;
-  max-width: 250px;
-  height: 1000px;
+  max-width: 500px;
   overflow: auto;
 }
