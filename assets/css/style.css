@@ -571,7 +571,7 @@ a.hotel-info:hover {
 .activities-mobile button {
   height: 25vw;
   padding: 0;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
 .table {
@@ -605,6 +605,7 @@ a.hotel-info:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .panel p {
