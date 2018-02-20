@@ -399,15 +399,12 @@ section.collage {
 
 /*HOTEL INFORMATION*/
 
-#hotel-info img {
+#hotel-info img.desktop {
   display: block;
   width: 100%;
   height: 180px;
   margin-bottom: 20px;
   border-radius: 3px;
-}
-
-#hotel-info img:hover {
   box-shadow: 0 8px 13px rgba(0,0,0,.25);
 }
 
@@ -415,7 +412,7 @@ section.collage {
   width: 330px;
 }
 
-#hotel-info h4 {
+#hotel-info .hotel-section h4 {
   font-family: 'Julius Sans One', sans-serif;
   color: #cccccc;
   text-align: center;
@@ -423,6 +420,8 @@ section.collage {
   font-size: 25px;
   font-weight: bold;
 }
+
+
 
 a.hotel-info,
 #hotel-info p {
@@ -436,6 +435,7 @@ a.hotel-info,
   color: black;
 }
 
+.hotel-name a:hover,
 a.hotel-info:hover {
   color: #005cb3;
 }
@@ -452,7 +452,11 @@ a.hotel-info:hover {
   height: 390px;
 }
 
-.hotel-name {
+#hotel-info .padding {
+  padding: 0 8px;
+}
+
+.hotel-name a {
   font-family: 'Julius Sans One', sans-serif;
   color: rgb(0, 26, 51);
   font-size: 20px;
@@ -460,7 +464,33 @@ a.hotel-info:hover {
   font-weight: bold;
 }
 
+.hotel-desktop .hotel-details,
+.hotel-mobile .hotel-details {
+  display: table;
+}
 
+#hotel-info i {
+  color: #cccccc;
+}
+
+.hotel-desktop .hotel-details i,
+.hotel-desktop, .hotel-details p,
+.hotel-mobile .hotel-details i,
+.hotel-mobile .hotel-details p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hotel-mobile .hotel-details i,
+.hotel-desktop .hotel-details i {
+  width: 50px;
+}
+
+/*.hotel-desktop .address i*/
+
+.hotel-mobile {
+  display: none;
+}
 
 /*details*/
 
@@ -545,12 +575,10 @@ a.hotel-info:hover {
   width: 318px;
   height: 180px;
   border-radius: 3px;
-}
-
-#activities img.desktop:hover {
   box-shadow: 0 8px 13px rgba(0,0,0,.25);
 }
 /*------ACCORDION------*/
+
 
 #activities .activities-mobile {
   display: none;
@@ -568,6 +596,7 @@ a.hotel-info:hover {
     transition: 0.4s;
 }
 
+.hotel-mobile button,
 .activities-mobile button {
   height: 25vw;
   padding: 0;
@@ -580,6 +609,7 @@ a.hotel-info:hover {
   width: 50vw;
 }
 
+.hotel-mobile h5,
 .table h4 {
   color: rgb(0, 40, 77);
   font-family: 'Julius Sans One', sans-serif;
@@ -594,6 +624,7 @@ a.hotel-info:hover {
     background-color: #ccc;
 }
 
+.hotel-mobile img,
 .accordion img.mobile {
   width: 25vw;
   height: 25vw;
@@ -608,7 +639,8 @@ a.hotel-info:hover {
     margin-bottom: 30px;
 }
 
-.panel p {
+.activities-mobile .panel p,
+.hotel-mobile .panel {
   font-size: 15px;
   padding: 0 18px;
   margin-bottom: 40px

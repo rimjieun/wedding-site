@@ -91,26 +91,16 @@
   }
 
   /*HOTEL SECTION*/
-  #hotel-info .flex-row {
+  #hotel-info .section-content {
     flex-direction: column;
   }
 
-  #hotel-info .hotel-section {
-    margin: 10px auto;
-    text-align: center;
+  #hotel-info ul {
+    display: none;
   }
 
-  #hotel-info h4 {
-    font-size: 23px;
-  }
-
-  .hotel-name {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  p.hotel-info {
-    font-size: 15px;
+  .hotel-mobile {
+    display: block;
   }
 
   /*DETAILS SECTION*/
