@@ -423,7 +423,8 @@ section.collage {
 
 
 a.hotel-info,
-#hotel-info p {
+#hotel-info p,
+#hotel-info .phone a {
   font-family: 'Kurale', serif;
   text-align: left;
   display: block;
@@ -435,7 +436,8 @@ a.hotel-info,
 }
 
 .hotel-name a:hover,
-a.hotel-info:hover {
+a.hotel-info:hover,
+#hotel-info .phone a:hover {
   color: #005cb3;
 }
 
@@ -521,7 +523,6 @@ a.hotel-info:hover {
 }
 
 #details .info p {
-  font-family: 'Kurale', serif;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -538,6 +539,11 @@ a.hotel-info:hover {
   height: 400px;
   width: 500px;
   border: 5px #cccccc solid;
+}
+
+#map p {
+  font-family:'Kurale', serif;
+  font-size: 15px;
 }
 
 #details a.rsvp-btn {
