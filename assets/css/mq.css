@@ -133,11 +133,27 @@
     margin-bottom: 30px;
   }
 
+  #activities .activities-desktop {
+    display: none;
+  }
+
+  #activities .activities-mobile {
+    display: block;
+  }
+
+  .table h4 {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
   /*COLLAGE*/
   .collage div {
     width: 50%;
+  }
+
+  .table h4 {
+    font-size: 17px;
   }
 }
