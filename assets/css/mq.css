@@ -127,6 +127,14 @@
     margin-bottom: 30px;
   }
 
+  #details a.rsvp-btn.desktop {
+    display: none;
+  }
+
+  #details a.rsvp-btn.mobile {
+    display: block;
+  }
+
   #activities .activities-desktop {
     display: none;
   }

@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 // IMAGE CYCLER
 function cycleImages() {
   var active = $('#cycler .active');
