@@ -32,6 +32,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  if (days <= 1) {
+    $('.days .label').html('DAY');
+  }
+
+  if (hours <= 1) {
+    $('.hours .label').html('HR');
+  }
+
   // Display the result in the element with id="demo"
   $(".countdown .days .digits").text(days);
   $(".countdown .hours .digits").text(hours);

@@ -90,7 +90,7 @@ span.tiny {
 
 #navbar {
   display: table;
-  font-size: 1.5vw;
+  font-size: 23px;
   width: 650px;
   height: 70px;
 }
@@ -107,12 +107,12 @@ span.tiny {
 
 header .bottom-header {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.5vw;
+  font-size: 21.5px;
   background: rgba(13, 13, 13, 0.8);
   color: white;
   height: 40px;
   text-align: right;
-  padding: 0 98px;
+  padding: 0 70px;
   line-height: 40px;
 }
 
@@ -525,7 +525,9 @@ a.hotel-info,
   display: none;
 }
 
-
+.hotel-mobile .hotel-details.info {
+  padding-bottom: 28px;
+}
 
 /*details*/
 
@@ -764,6 +766,10 @@ a.hotel-info,
 .website i {
   display: table-cell;
   vertical-align: middle;
+}
+
+.website.hotel-link {
+  width: 100%;
 }
 
 .panel .directions:hover,
