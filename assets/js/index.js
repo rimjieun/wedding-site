@@ -66,13 +66,12 @@ function loadBrowserImages() {
 
 function loadMobileImages() {
   $('#cycler')
-    .append($('<img class="active size-ref" src="assets/img/photos/portrait/001.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/003.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/004.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/005.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/006.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/test.jpg" alt="Naeun & Jeremy" />'));
+    .append($('<img class="active size-ref" src="assets/img/photos/portrait/001_optimized.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/002_optimized.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/003_optimized.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/004_optimized.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/005_optimized.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/006_optimized.jpg" alt="Naeun & Jeremy" />'));
 }
 
 $('#mobile-menu-btn').on('click', function() {
