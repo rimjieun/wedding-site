@@ -56,22 +56,23 @@ var x = setInterval(function() {
 function loadBrowserImages() {
 
   $('#cycler')
-    .append($('<img id="size-ref" class="active size-ref" src="assets/img/photos/landscape/cropped/layered/006.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/collage/001.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/landscape/cropped/layered/003.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/collage/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/landscape/cropped/layered/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/collage/003.jpg" alt="Naeun & Jeremy" />'));
+    .append($('<img id="size-ref" class="active size-ref" src="assets/img/photos/landscape/001.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/landscape/002.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/landscape/003.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/landscape/004.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/landscape/005.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/landscape/006.jpg" alt="Naeun & Jeremy" />'));
 }
 
 function loadMobileImages() {
   $('#cycler')
-    .append($('<img class="active size-ref" src="assets/img/photos/portrait/selected/cropped/001.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/selected/cropped/002.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/selected/cropped/003.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/selected/cropped/004.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/selected/cropped/005.jpg" alt="Naeun & Jeremy" />'))
-    .append($('<img class="size-ref" src="assets/img/photos/portrait/selected/cropped/006.jpg" alt="Naeun & Jeremy" />'));
+    .append($('<img class="active size-ref" src="assets/img/photos/portrait/001.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/002.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/003.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/004.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/005.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/006.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="size-ref" src="assets/img/photos/portrait/test.jpg" alt="Naeun & Jeremy" />'));
 }
 
 $('#mobile-menu-btn').on('click', function() {
