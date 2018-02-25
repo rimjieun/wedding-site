@@ -66,7 +66,7 @@ function loadBrowserImages() {
 
 function loadMobileImages() {
   $('#cycler')
-    .append($('<img class="active size-ref" src="assets/img/photos/portrait/new/016.jpg" alt="Naeun & Jeremy" />'))
+    .append($('<img class="active size-ref" src="assets/img/photos/portrait/new/001.jpg" alt="Naeun & Jeremy" />'))
     .append($('<img class="size-ref" src="assets/img/photos/portrait/new/002.jpg" alt="Naeun & Jeremy" />'))
     .append($('<img class="size-ref" src="assets/img/photos/portrait/new/003.jpg" alt="Naeun & Jeremy" />'))
     .append($('<img class="size-ref" src="assets/img/photos/portrait/new/004.jpg" alt="Naeun & Jeremy" />'))
