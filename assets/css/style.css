@@ -45,13 +45,6 @@ a {
   margin: 0 auto;
 }
 
-.line {
-  width: 25px;
-  height: 1px;
-  background: #cccccc;
-  margin: 0 auto;
-}
-
 /*HEADER*/
 
 header {
@@ -535,7 +528,7 @@ a.hotel-info,
   margin-bottom: 40px;
 }
 
-#details .flex-row { 
+#details .flex-row {
   width: 1000px;
   margin: 0 auto;
 }
@@ -547,6 +540,14 @@ a.hotel-info,
 #details .blurb p,
 #registry .blurb p {
   text-align: center;
+}
+
+#details .blurb p span.dress-code {
+  color: #800000;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 #details .info {
