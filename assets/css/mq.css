@@ -124,7 +124,7 @@
   #details .info {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   #details a.rsvp-btn.desktop {
@@ -191,6 +191,10 @@
 
   .table h4 {
     font-size: 17px;
+  }
+
+  .blurb {
+    width: 100%;
   }
 }
 

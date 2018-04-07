@@ -556,12 +556,13 @@ a.hotel-info,
   text-align: center;
 }
 
-#details .info .card {
+/* #details .info .card {
   margin: 10px 0;
-}
+} */
 
 #details .info .card.location {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  margin: 30px 0 10px;
 }
 
 #details h4 {
@@ -583,10 +584,11 @@ a.hotel-info,
 #details .fa {
   font-size: 40px;
   color: rgb(0, 40, 77);
+  margin-bottom: 10px;
 }
 
 #details #map {
-  height: 500px;
+  height: 472px;
   width: 600px;
   border: 5px #cccccc solid;
 }
@@ -597,7 +599,7 @@ a.hotel-info,
 }
 
 #details a.rsvp-btn {
-  margin: 0 auto;
+  margin: 15px auto 0;
   max-width: 200px;
   width: 90%;
   min-height: 50px;
